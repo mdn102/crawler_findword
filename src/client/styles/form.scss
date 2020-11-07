@@ -1,0 +1,132 @@
+
+
+$grey: #2a2a2a;
+$blue: #1fb5bf;
+
+
+.search {
+    width: 50%;
+    min-width: 500px;
+    max-width: 475px;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .25);
+
+    @media(max-width: 40em) {
+        width: 95%;
+        position: relative;
+        margin: 2.5% auto 0 auto;
+        left: 0%;
+        -webkit-transform: translate(0%, 0%);
+        -moz-transform: translate(0%, 0%);
+        -o-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+        transform: translate(0%, 0%);
+    }
+
+    form {
+        border: 1px solid #545454;
+        border-radius: 3px;
+        padding: 2em;
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+    }
+
+    h2 {
+        width: 100%;
+        color: lighten($grey, 20%);
+        font-family: 'open sans condensed';
+        font-size: 1.35em;
+        display: block;
+        background: $grey;
+        width: 100%;
+        text-transform: uppercase;
+        padding: .75em 1em .75em 1.5em;
+        box-shadow: inset 0px 1px 1px fadeout(white, 95%);
+        border: 1px solid darken($grey, 5%);
+        margin: 0;
+        font-weight: 200;
+    }
+
+    input {
+        padding: 5px 20px;
+        width: 100%;
+        line-height: 16px;
+        margin: 10px 0;
+        display: block;
+        margin: auto auto;
+        width: 100%;
+        margin-bottom: 2em;
+        padding: .5em 0;
+        border: none;
+        border-bottom: 1px solid #eaeaea;
+        padding-bottom: 1.25em;
+        color: #757575;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .btn {
+        display: inline-block;
+        background: $blue;
+        border: 1px solid darken($blue, 5%);
+        padding: .5em 2em;
+        color: white;
+        margin-right: .5em;
+        box-shadow: inset 0px 1px 0px fadeout(white, 80%);
+
+        &:hover {
+            background: lighten($blue, 5%);
+        }
+
+        &:active {
+            background: $blue;
+            box-shadow: inset 0px 1px 1px fadeout(black, 90%);
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.results {
+    border: solid ;
+    text-decoration:none;
+   }
+.news-list{
+    display:block;
+     position:absolute;
+    top: 45%;
+   left:20%;
+}
+h2 {
+    font-size: 1.5em;
+}
+h4{
+width:200px;
+background-color:rgb(72,209,204);
+padding:10px;
+border-radius:5px;
+overflow-x: clip ;
+overflow-y: clip ;
+white-space: nowrap;
+  }
+
+li {
+      color:$grey;
+      list-style:none;
+      padding:10px;
+      font-size: 1.2em;
+  }

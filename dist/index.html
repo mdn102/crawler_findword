@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Evaluate a News Article with Natural Language Processing</title>
+
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+
+    <header>
+        <div class="">
+            Udacity
+        </div>
+        <div class="">
+            Evaluate A News Article with NLP
+        </div>
+    </header>
+
+    <main>
+        <section class="search">
+            <form class="" onsubmit="return handleSubmit(event)">
+                <label for="url">Search For an Article URL </label>
+                <input id="url" type="url" name="url" value="" 
+                    placeholder="Please enter a url for an article." required>
+                <input type="submit" class="btn" value="submit" onclick="return Client.handleSubmit(event)"
+                    onsubmit="return Client.handleSubmit(event)">
+            </form>
+        </section>
+
+
+        <section>
+            <div class="results"></div>
+            <ul class="news-list">
+                <h2>Form Results</h2>
+
+                <li>
+                    <h4>Text polarity:</h4>
+                    <p id="polarity"></p>
+                    <h4>Confidence:</h4>
+                    <p id="polarity_confidence"></p>
+                </li>
+                <li>
+                    <h4>Subjectivity:</h4>
+                    <p id="subjectivity"></p>
+                    <h4>Confidence:</h4>
+                    <p id="subjectivity_confidence"></p>
+                </li>
+                <li>
+                    <h4>Text</h4>
+                    <p id="text"></p>
+                </li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>2020</p>
+    </footer>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+<script type="text/javascript" src="main.js"></script></body>
+
+</html>
