@@ -1,0 +1,16 @@
+#start{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    
+}
+
+.win{
+    background-color: aqua;
+    color: fuchsia;
+}
+
+#reset{
+    height: 100px; 
+    width: 100px;
+}
