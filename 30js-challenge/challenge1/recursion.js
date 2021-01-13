@@ -1,4 +1,4 @@
-//Write a function that finds the sum of the first n natural number, 
+// Write a function that finds the sum of the first n natural number, 
 // a recursive function
 function sum(n){
     if(n==0){
