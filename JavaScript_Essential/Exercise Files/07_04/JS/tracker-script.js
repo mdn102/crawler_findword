@@ -10,7 +10,7 @@ function mouseCoordinates(e) {
     // Take total window width, subtract current coordinate and width of circle.
     // Do the same for Y coordinate (distance from top viewport edge).
     var horizontalPosition = windowWidth - e.clientX - 26;
-    var verticalPosition= windowHeight - e.clientY - 26;
+    var verticalPosition = windowHeight - e.clientY - 26;
 
     // Set horizontal and vertical position.
     CIRCLE.style.left = horizontalPosition + 'px';
@@ -29,4 +29,4 @@ AREA.addEventListener('mousemove', mouseCoordinates, false);
 CIRCLE.addEventListener('mouseenter', changeColorOnTouch, false);
 
 // When the mouse leaves the circle, remove inline styles with an anonymous function.
-CIRCLE.addEventListener('mouseleave', function(){CIRCLE.removeAttribute("style");}, false);
+CIRCLE.addEventListener('mouseleave', function () { CIRCLE.removeAttribute("style"); }, false);

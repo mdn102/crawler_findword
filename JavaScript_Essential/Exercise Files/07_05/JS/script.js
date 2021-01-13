@@ -11,4 +11,4 @@ function reveal(e) {
 }
 
 CTA.addEventListener('click', reveal, false);
-CTA.addEventListener('click', function(){console.log("The button was clicked!")}, false);
+CTA.addEventListener('click', function () { console.log("The button was clicked!") }, false);

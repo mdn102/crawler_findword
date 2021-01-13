@@ -1,4 +1,4 @@
-$(window).load(function() {
+$(window).load(function () {
     $('.front-slider').flexslider({
         animation: "slide",
         controlNav: false,
