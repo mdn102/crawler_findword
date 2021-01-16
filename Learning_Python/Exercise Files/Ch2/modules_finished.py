@@ -8,3 +8,4 @@ print("The square root of 16 is", math.sqrt(16))
 print("Pi is:", math.pi)
 
 # try some of the math functions for yourself here:
+print("The exponent 2 of 3 is", math.exp(2))
