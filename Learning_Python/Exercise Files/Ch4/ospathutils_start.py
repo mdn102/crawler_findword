@@ -10,7 +10,7 @@ import time
 
 def main():
   # Print the name of the OS
-
+  print(os.name)
   
   # Check for item existence and type
 
