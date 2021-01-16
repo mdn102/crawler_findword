@@ -38,7 +38,7 @@ for m in range(1,13):
   # The first Friday has to be within the first two weeks
   weekone = cal[0]
   weektwo = cal[1]
-   
+  
   if weekone[calendar.FRIDAY] != 0:
     meetday = weekone[calendar.FRIDAY]
   else:
