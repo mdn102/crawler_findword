@@ -1,0 +1,8 @@
+{
+  "pythonVersion": "3.8.0",
+  "numberOfWords": "10",
+  "excludeWords": [
+    "something",
+    "somethingelse"
+  ]
+}

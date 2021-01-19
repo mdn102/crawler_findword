@@ -1,6 +1,7 @@
 # Python3 program for a word frequency
 # counter after crawling a web-page
 
+
 import requests    
 import re    
 from urllib.parse import urlparse    
