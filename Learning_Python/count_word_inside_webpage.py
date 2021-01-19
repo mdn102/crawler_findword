@@ -4,7 +4,7 @@ from collections import Counter
 from string import punctuation
 
 # We get the url
-r = requests.get("https://en.wikiquote.org/wiki/Khalil_Gibran")
+r = requests.get("https://en.wikipedia.org/wiki/Microsoft")
 soup = BeautifulSoup(r.content)
 
 # We get the words within paragrphs
@@ -17,4 +17,4 @@ c_div = Counter((x.rstrip(punctuation).lower() for y in text_div for x in y.spli
 
 # We sum the two countesr and get a list with words count from most to less common
 total = c_div + c_p
-list_most_common_words = total.most_common() 
+list_most_common_words = total.most_common(10) 
