@@ -1,6 +1,5 @@
 {
     "workbench.settings.openDefaultSettings": true,
     "python.linting.enabled": true,
-    "python.autoComplete.extraPaths": ["./path-to-your-code"],
     "python.linting.pylintEnabled": true
 }
