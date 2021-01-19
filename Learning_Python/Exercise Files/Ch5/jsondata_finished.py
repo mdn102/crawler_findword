@@ -36,7 +36,7 @@ def printResults(data):
         if (feltReports != None):
             if (feltReports > 0):
                 print("%2.1f" % i["properties"]["mag"], i["properties"]
-                      ["place"], " reported " + str(feltReports) + " times")
+                    ["place"], " reported " + str(feltReports) + " times")
 
 
 def main():
@@ -54,7 +54,7 @@ def main():
         printResults(data)
     else:
         print("Received an error from server, cannot retrieve results " +
-              str(webUrl.getcode()))
+            str(webUrl.getcode()))
 
 
 if __name__ == "__main__":
