@@ -13,7 +13,6 @@ a given website, and push the contents to
 the second function clean_wordlist()'''
 
 
-
 def start(url): 
 
 	# empty list to store the contents of 
