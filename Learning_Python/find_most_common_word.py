@@ -70,7 +70,6 @@ def create_dictionary(clean_list):
 		print ("% s : % s " % (key, value)) 
 		
 	<-- '''
-
 	
 	c = Counter(word_count) 
 	
