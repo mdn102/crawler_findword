@@ -68,5 +68,5 @@ class PyCrawler(object):
         self.crawl(self.starting_url)    
 
 if __name__ == "__main__":    
-    crawler = PyCrawler("https://google.com")     
+    crawler = PyCrawler("https://en.wikipedia.org/wiki/Microsoft")
     crawler.start()

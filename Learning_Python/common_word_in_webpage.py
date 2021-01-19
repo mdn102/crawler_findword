@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from collections import Counter
 from string import punctuation
 
-r = requests.get("http://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart")
+r = requests.get("https://en.wikipedia.org/wiki/Microsoft")
 
 soup = BeautifulSoup(r.content)
 
