@@ -8,15 +8,15 @@ from collections import Counter
 r = requests.get("https://en.wikipedia.org/wiki/Microsoft")
 soup = BeautifulSoup(r.content)
 
-# get the words within paragrphs
+# get the words within paragraphs
 text_p = (''.join(s.findAll(text=True))for s in soup.findAll('p'))
-c_p = Counter((x.rstrip(punctuation).lower() for y in text_p for x in y.split()))
+c_p = Counter((x.strips(punctuation).lower() for y in text_p for x in y.split()))
 
 # get the words within divs
 text_div = (''.join(s.findAll(text=True))for s in soup.findAll('div'))
-c_div = Counter((x.rstrip(punctuation).lower() for y in text_div for x in y.split()))
+c_div = Counter((x.strips(punctuation).lower() for y in text_div for x in y.split()))
 
-# sum the two countesr and get a list with words count from most to less common
+# sum the two counters and get a list with words count from most to less common
 total = c_div + c_p
 list_most_common_words = total.most_common(10) 
 <---'''

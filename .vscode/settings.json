@@ -2,5 +2,7 @@
     "workbench.settings.openDefaultSettings": true,
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
-    "C_Cpp.errorSquiggles": "Disabled"
+    "C_Cpp.errorSquiggles": "Disabled",
+    "editor.insertSpaces": false,
+    "editor.wordWrap": "on"
 }

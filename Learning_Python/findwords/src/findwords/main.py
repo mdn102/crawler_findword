@@ -2,14 +2,20 @@ import sys
 import getopt
 import urllib.request
 from urllib.request import urlopen
+from bs4 import BeautifulSoup
+import operator
+from collections import Counter
+from string import punctuation
 import ssl
 
 ssl._create_default_https_context = ssl._create_unverified_context
 
 
+
+
 def crawler(url):
-    content = url
-    return content
+    html = url
+    return html 
 
 
 if __name__ == '__main__':
@@ -22,9 +28,12 @@ if __name__ == '__main__':
 
     content = crawler("https://en.wikipedia.org/wiki/Microsoft")
     print(content)
+    
 
     # read the data from the URL and print it
-    file = urlopen(content)
-    data = file.read()
-    print(data)
+    text = urlopen(content).read()
+    print(text)
     
+
+    
+
