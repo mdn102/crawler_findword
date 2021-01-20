@@ -1,13 +1,14 @@
 import sys, getopt
-import requests
-# from bs4 import BeautifulSoup
-from collections import Counter
-from string import punctuation
+import urllib.request
+from urllib.request import urlopen
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 def crawler(url):
     content = url
-    return content 
-    
+    return content
+
 
 if __name__ == '__main__':
     # Parsing argument
@@ -16,9 +17,12 @@ if __name__ == '__main__':
 
     print (f"Print total {NUM_WORDS} words")
     print (f"Words that are excluded: {EXCLUDE_WORDS}")
+    
     content = crawler("https://en.wikipedia.org/wiki/Microsoft")
     print(content)
     
-    r = requests.get("https://en.wikipedia.org/wiki/Microsoft")
-    # soup = BeautifulSoup(r.content)
-    text = (''.join(s.findAll(text=True))for s in soup.findAll('p'))
+    # read the data from the URL and print it
+    file = urlopen(content)
+    data = file.read()
+    print(data)
+    

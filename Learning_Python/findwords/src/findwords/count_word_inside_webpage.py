@@ -1,8 +1,3 @@
-import requests
-from bs4 import BeautifulSoup
-import operator
-from collections import Counter
-
 '''--->
 # get the url
 r = requests.get("https://en.wikipedia.org/wiki/Microsoft")
@@ -22,43 +17,38 @@ list_most_common_words = total.most_common(10)
 <---'''
 
 
-def my_start(url):
-    my_wordlist = []
-    my_source_code = requests.get(url).text
-    my_soup = BeautifulSoup(my_source_code, 'html.parser')
-    for each_text in my_soup.findAll('div', {'class': 'entry-content'}):
-        content = each_text.text
-        words = content.lower().split()
-        for each_word in words:
-            my_wordlist.append(each_word)
-        clean_wordlist(my_wordlist)
-        
-# Function removes any unwanted symbols
-
-def clean_wordlist(wordlist):
-    clean_list = []
-    for word in wordlist:
-        symbols = '!@#$%^&*()_-+={[}]|\;:"<>?/., '
-        for i in range(0, len(symbols)):
-            word = word.replace(symbols[i], '')
-        if len(word) > 0:
-            clean_list.append(word)
-    create_dictionary(clean_list)
+from collections import defaultdict
+from bs4 import BeautifulSoup, Tag
+import requests
 
 
-def create_dictionary(clean_list):
-    word_count = {}
-    for word in clean_list:
-        if word in word_count:
-            word_count[word] += 1
-        else:
-            word_count[word] = 1
-    c = Counter(word_count)
-    # returns the most occurring elements
-    top = c.most_common(10)
-    print(top)
+def find_most_common():
+    page = requests.get("https://en.wikipedia.org/wiki/Microsoft")
+    soup = BeautifulSoup(page.text, "html.parser")
+    #soup = [s.extract() for s in soup('script')]
+    history = soup.find(id="History").parent.next_siblings
+    max_count = 0
+    max_word = ""
+    dd = defaultdict(int)
+    for elem in history:
+        if isinstance(elem, Tag):
+            if elem.name == "h2":
+                print(max_word, "is the most common")
+                return max_count
+            words = elem.get_text().split()
+            for word in words:
+                dd[word] += 1
+                if dd[word] > max_count:
+                    max_count = dd[word]
+                    max_word = word
+    return "Error"
 
 
-# Driver code
-if __name__ == '__main__':
-    my_start("https://en.wikipedia.org/wiki/Microsoft")
+print(find_most_common())
+
+
+# # Driver code
+# if __name__ == '__main__':
+#     my_start("https://en.wikipedia.org/wiki/Microsoft")
+
+
