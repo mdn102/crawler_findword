@@ -19,8 +19,8 @@ def crawler(url):
     index_page = urlopen(url).read()
     scrape_data = BeautifulSoup(index_page, "html.parser")
     # print(scrape_data)
-		wordlist = scrape_data.text 
-		
+		# wordlist = scrape_data.text 
+
 		# response = urllib.request.urlopen(url)
 		# url_contents = response.read()
   
@@ -34,8 +34,8 @@ def crawler(url):
     for script in scrape_data(["script", "style"]):
         script.decompose()
     
-    # strips = list(scrape_data.stripped_strings)
-    # print(strips[:10])
+    strips = list(scrape_data.stripped_strings)
+    print(strips[:10])
     
     # history = scrape_data.find(id="History").parent.next_siblings
     # print(history)
@@ -54,8 +54,8 @@ def text_process(content):
     Microsoft entered the operating system(OS) business in 1980 with its own version of Unix called Xenix, [24] but it was MS-DOS that solidified the company's dominance. IBM awarded a contract to Microsoft in November 1980 to provide a version of the CP/M OS to be used in the IBM Personal Computer (IBM PC).[25] For this deal, Microsoft purchased a CP/M clone called 86-DOS from Seattle Computer Products which it branded as MS-DOS, although IBM rebranded it to IBM PC DOS. Microsoft retained ownership of MS-DOS following the release of the IBM PC in August 1981. IBM had copyrighted the IBM PC BIOS, so other companies had to reverse engineer it in order for non-IBM hardware to run as IBM PC compatibles, but no such restriction applied to the operating systems. Microsoft eventually became the leading PC operating systems vendor.[26][27]:210 The company expanded into new markets with the release of the Microsoft Mouse in 1983, as well as with a publishing division named Microsoft Press.[16]:232 Paul Allen resigned from Microsoft in 1983 after developing Hodgkin's disease.[28] Allen claimed in Idea Man: A Memoir by the Co-founder of Microsoft that Gates wanted to dilute his share in the company when he was diagnosed with Hodgkin's disease because he did not think that he was working hard enough.[29] Allen later invested in low-tech sectors, sports teams, commercial real estate, neuroscience, private space flight, and more.[30]"""
     wordlist = content.split()
     # print(wordlist)
-    word_list(wordlist)
-    # wordListToFreqDict(wordlist)
+    # word_list(wordlist)
+    wordListToFreqDict(wordlist)
 
 def word_list(wordlist):
     cleanlist = []
@@ -68,9 +68,13 @@ def word_list(wordlist):
     # print(cleanlist)
 		# return cleanlist
     # dictionary(cleanlist)   
-		wordListToFreqDict(cleanlist)
+		# wordListToFreqDict(cleanlist)
 
 def wordListToFreqDict(cleanlist):
+		wordfreq = {}
+		# for w in cleanlist:
+		# 		wordfreq.append(cleanlist.count(w))
+		# print (wordfreq)
     wordfreq = [cleanlist.count(w) for w in cleanlist]
     print(dict(list(zip(cleanlist, wordfreq))))
 
@@ -107,8 +111,9 @@ if __name__ == '__main__':
 
     html = crawler("https://en.wikipedia.org/wiki/Microsoft")
     print(html)
-    word_list= text_process(None) 
-    wordListToFreqDict(word_list)
+    # word_list= 
+    text_process(None) 
+    # wordListToFreqDict(word_list)
     
     
     
