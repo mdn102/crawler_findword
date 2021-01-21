@@ -4,5 +4,6 @@
     "python.linting.pylintEnabled": true,
     "C_Cpp.errorSquiggles": "Disabled",
     "editor.insertSpaces": false,
-    "editor.wordWrap": "on"
+		"editor.wordWrap": "on",
+		"editor.detectIndentation": false
 }

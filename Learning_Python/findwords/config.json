@@ -2,7 +2,15 @@
   "pythonVersion": "3.8.0",
   "numberOfWords": "10",
   "excludeWords": [
-    "something",
-    "somethingelse"
+    "The",
+		"Microsoft",
+		"in",
+		"of",
+		"and",
+		"a",
+		"to",
+		"on",
+		"Windows",
+		"for"
   ]
 }
