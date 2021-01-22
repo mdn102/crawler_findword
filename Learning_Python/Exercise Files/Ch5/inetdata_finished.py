@@ -5,10 +5,10 @@ import urllib.request # instead of urllib2 like in Python 2.7
 
 def main():
   # open a connection to a URL using urllib2
-  webUrl = urllib.request.urlopen("https://en.wikipedia.org/wiki/Microsoft")
+  webUrl = urllib.request.urlopen("http://www.google.com")
   
   # get the result code and print it
-  # print ("result code: " + str(webUrl.getcode()))
+  print ("result code: " + str(webUrl.getcode()))
   
   # read the data from the URL and print it
   data = webUrl.read()
