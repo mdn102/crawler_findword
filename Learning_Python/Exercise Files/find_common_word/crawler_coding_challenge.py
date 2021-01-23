@@ -1,9 +1,5 @@
 # Python3 program for a word frequency
 # counter after crawling a web-page
-<<<<<<< HEAD:crawler_coding_challenge.py
-=======
-
->>>>>>> main:findwords/crawler_coding_challenge.py
 
 import requests    
 import re    

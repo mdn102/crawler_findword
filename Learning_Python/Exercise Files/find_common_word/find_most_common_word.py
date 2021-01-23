@@ -12,10 +12,6 @@ spider, which will fetch information from
 a given website, and push the contents to 
 the second function clean_wordlist()'''
 
-<<<<<<< HEAD:find_most_common_word.py
-
-=======
->>>>>>> main:findwords/find_most_common_word.py
 
 def start(url): 
 
