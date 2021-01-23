@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>string frequency</title>
+<style type="text/css">
+#text{
+    width:250px;
+}
+</style>
+</head>
+
+<body >
+
+<textarea id="txt" cols="25" rows="3" placeholder="add your text here">   </textarea></br>
+<button type="button" onclick="search()">search</button>
+
+    <script >
+
+        function search()
+        {
+            var data=document.getElementById('txt').value;
+            var temp=data;
+            var words=new Array();
+            words=temp.split(" ");
+
+            var unique = {};
+
+
+            for (var i = 0; i < words.length; i++) {
+                var word = words[i];
+                console.log(word);
+
+                if (word in unique)
+                {
+                    console.log("word found");
+                    var count  = unique[word];
+                    count ++;
+                    unique[word]=count;
+                }
+                else
+                {
+                    console.log("word NOT found");
+                    unique[word]=1;
+                }
+            }
+            console.log(unique);
+        }
+
+    </script>
+
+</body>
