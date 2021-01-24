@@ -1,3 +1,7 @@
+#input {
+	width: 500px;
+	rows: 50px;
+}
 #btn {
   color: white;
   text-align: center;
