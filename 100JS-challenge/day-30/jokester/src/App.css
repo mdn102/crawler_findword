@@ -1,0 +1,11 @@
+.jokes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.joke-cards{
+  width: 20%;
+  margin: 5px;
+}

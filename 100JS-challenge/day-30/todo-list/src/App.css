@@ -1,0 +1,22 @@
+.todos{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 1px gray solid;
+  width: 25%;
+  margin:  0 auto; 
+  margin-top: 10%;;
+}
+.header{
+  text-align: center;
+}
+.todo-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self:center;
+  border-bottom: .25px solid black;
+  margin-bottom: 13px;
+  width: 75%;
+
+}
