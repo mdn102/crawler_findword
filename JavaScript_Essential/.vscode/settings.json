@@ -1,0 +1,18 @@
+{
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"javascript.validate.enable": false,
+	"workbench.colorCustomizations": {
+		/* error squiggles */
+  	"editorError.foreground": "#ff6060",
+
+  	/* warning squggles */
+  	"editorWarning.foreground": "#363636",
+
+  	/* info squiggles */
+  	"editorInfo.foreground": "#3835ff"
+	},
+	"debug.javascript.terminalOptions": {
+	
+	}
+}
