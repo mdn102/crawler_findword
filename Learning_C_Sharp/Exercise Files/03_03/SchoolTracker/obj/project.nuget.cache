@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "2/nLUOZexcIeLHuW7IN6welK0IQu9EDFcwfzqt0sMD8s6WiuPm/Zs8TUujW0pZgy13g57gJ6+/X/4xZ2k7x+GA==",
+  "success": true,
+  "projectFilePath": "/Users/minhnguyen/Desktop/Micode/project/Learning_C_Sharp/Exercise Files/03_03/SchoolTracker/SchoolTracker.csproj",
+  "expectedPackageFiles": [
+    "/Users/minhnguyen/.nuget/packages/microsoft.netcore.app/2.0.0/microsoft.netcore.app.2.0.0.nupkg.sha512",
+    "/Users/minhnguyen/.nuget/packages/microsoft.netcore.dotnetapphost/2.0.0/microsoft.netcore.dotnetapphost.2.0.0.nupkg.sha512",
+    "/Users/minhnguyen/.nuget/packages/microsoft.netcore.dotnethostpolicy/2.0.0/microsoft.netcore.dotnethostpolicy.2.0.0.nupkg.sha512",
+    "/Users/minhnguyen/.nuget/packages/microsoft.netcore.dotnethostresolver/2.0.0/microsoft.netcore.dotnethostresolver.2.0.0.nupkg.sha512",
+    "/Users/minhnguyen/.nuget/packages/microsoft.netcore.platforms/2.0.0/microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "/Users/minhnguyen/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
