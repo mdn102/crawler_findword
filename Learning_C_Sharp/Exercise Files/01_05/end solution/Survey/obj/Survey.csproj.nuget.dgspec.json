@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/minhnguyen/Desktop/Micode/project/Learning_C_Sharp/Exercise Files/01_05/end solution/Survey/Survey.csproj": {}
+  },
+  "projects": {
+    "/Users/minhnguyen/Desktop/Micode/project/Learning_C_Sharp/Exercise Files/01_05/end solution/Survey/Survey.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/minhnguyen/Desktop/Micode/project/Learning_C_Sharp/Exercise Files/01_05/end solution/Survey/Survey.csproj",
+        "projectName": "Survey",
+        "projectPath": "/Users/minhnguyen/Desktop/Micode/project/Learning_C_Sharp/Exercise Files/01_05/end solution/Survey/Survey.csproj",
+        "packagesPath": "/Users/minhnguyen/.nuget/packages/",
+        "outputPath": "/Users/minhnguyen/Desktop/Micode/project/Learning_C_Sharp/Exercise Files/01_05/end solution/Survey/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/minhnguyen/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "targetAlias": "netcoreapp2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "targetAlias": "netcoreapp2.0",
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

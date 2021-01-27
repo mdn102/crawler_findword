@@ -1,0 +1,11 @@
+C:\Users\Alexander Zanfir\source\repos\SchoolTracker\SchoolTracker\bin\Debug\netcoreapp2.0\SchoolTracker.deps.json
+C:\Users\Alexander Zanfir\source\repos\SchoolTracker\SchoolTracker\bin\Debug\netcoreapp2.0\SchoolTracker.runtimeconfig.json
+C:\Users\Alexander Zanfir\source\repos\SchoolTracker\SchoolTracker\bin\Debug\netcoreapp2.0\SchoolTracker.runtimeconfig.dev.json
+C:\Users\Alexander Zanfir\source\repos\SchoolTracker\SchoolTracker\bin\Debug\netcoreapp2.0\SchoolTracker.dll
+C:\Users\Alexander Zanfir\source\repos\SchoolTracker\SchoolTracker\bin\Debug\netcoreapp2.0\SchoolTracker.pdb
+C:\Users\Alexander Zanfir\source\repos\SchoolTracker\SchoolTracker\obj\Debug\netcoreapp2.0\SchoolTracker.csproj.CoreCompileInputs.cache
+C:\Users\Alexander Zanfir\source\repos\SchoolTracker\SchoolTracker\obj\Debug\netcoreapp2.0\SchoolTracker.AssemblyInfoInputs.cache
+C:\Users\Alexander Zanfir\source\repos\SchoolTracker\SchoolTracker\obj\Debug\netcoreapp2.0\SchoolTracker.AssemblyInfo.cs
+C:\Users\Alexander Zanfir\source\repos\SchoolTracker\SchoolTracker\obj\Debug\netcoreapp2.0\SchoolTracker.dll
+C:\Users\Alexander Zanfir\source\repos\SchoolTracker\SchoolTracker\obj\Debug\netcoreapp2.0\SchoolTracker.pdb
+C:\Users\Alexander Zanfir\source\repos\SchoolTracker\SchoolTracker\obj\Debug\netcoreapp2.0\SchoolTracker.csprojResolveAssemblyReference.cache

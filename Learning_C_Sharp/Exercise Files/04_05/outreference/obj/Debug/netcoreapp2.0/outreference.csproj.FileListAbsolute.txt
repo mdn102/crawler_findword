@@ -1,0 +1,11 @@
+C:\Users\Alexander Zanfir\source\repos\outreference\outreference\bin\Debug\netcoreapp2.0\outreference.deps.json
+C:\Users\Alexander Zanfir\source\repos\outreference\outreference\bin\Debug\netcoreapp2.0\outreference.runtimeconfig.json
+C:\Users\Alexander Zanfir\source\repos\outreference\outreference\bin\Debug\netcoreapp2.0\outreference.runtimeconfig.dev.json
+C:\Users\Alexander Zanfir\source\repos\outreference\outreference\bin\Debug\netcoreapp2.0\outreference.dll
+C:\Users\Alexander Zanfir\source\repos\outreference\outreference\bin\Debug\netcoreapp2.0\outreference.pdb
+C:\Users\Alexander Zanfir\source\repos\outreference\outreference\obj\Debug\netcoreapp2.0\outreference.csprojResolveAssemblyReference.cache
+C:\Users\Alexander Zanfir\source\repos\outreference\outreference\obj\Debug\netcoreapp2.0\outreference.csproj.CoreCompileInputs.cache
+C:\Users\Alexander Zanfir\source\repos\outreference\outreference\obj\Debug\netcoreapp2.0\outreference.AssemblyInfoInputs.cache
+C:\Users\Alexander Zanfir\source\repos\outreference\outreference\obj\Debug\netcoreapp2.0\outreference.AssemblyInfo.cs
+C:\Users\Alexander Zanfir\source\repos\outreference\outreference\obj\Debug\netcoreapp2.0\outreference.dll
+C:\Users\Alexander Zanfir\source\repos\outreference\outreference\obj\Debug\netcoreapp2.0\outreference.pdb
